@@ -1,0 +1,175 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-left: 8rem;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.feature{
+    background-image: url(./img/galaxy-1.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.destination{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    
+}
+.destination form{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+    
+}
+
+label{
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+
+input{
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.title {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+.title a{
+    background-color: transparent;
+    height: 4rem;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-right: 5rem;
+    border: #fff solid 2px;
+}
+
+.title a:hover{
+    color: black;
+    background-color: #fff;
+    opacity: 50%;
+}
+
+
+.feature2{
+    background-image: url(./img/landscape-1.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.transport{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+.transport a{
+    background-color: transparent;
+    height: 4rem;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-right: 5rem;
+    border: #fff solid 2px;
+}
+.transport a:hover{
+    color: black;
+    background-color: #fff;
+    opacity: 50%;
+}
+
+.feature3{
+    background-image: url(./img/eclipse-1.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.col{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+.col a{
+    background-color: transparent;
+    height: 4rem;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-right: 5rem;
+    border: #fff solid 2px;
+}
+.col a:hover{
+    color: black;
+    background-color: #fff;
+    opacity: 50%;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: #555;
+    padding: 40px;
+}
