@@ -1,175 +1,212 @@
-body{
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: black;
 }
 
 header {
-    position: fixed;
-    z-index: 1;
-    display: flex;
-
+  position: fixed;
+  z-index: 1;
+  display: flex;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    margin-left: 8rem;
-    
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: 8rem;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-.feature{
-    background-image: url(./img/galaxy-1.jpg);
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
+.basket {
+  width: 15vw;
+  display: flex;
 }
 
-.destination{
-    height: 25vh;
-    width: 100%;
-    display: flex;
-    
-}
-.destination form{
-    
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: black;
-    padding: 1rem;
-    
+.basket,
+#cost {
+  flex-wrap: nowrap;
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0;
 }
 
-label{
-    margin-left: 20px;
-    margin-right: 10px;
-    
+button {
+  background: transparent;
+  color: #fff;
+  border: #fff solid 2px;
+  max-width: 12.5rem;
+  padding: 1rem 2rem;
+  padding-right: 5rem;
+  font-size: 1rem;
+  height: 4rem;
+  font-weight: 700;
 }
 
-input{
-    margin-left: 0px;
-    margin-right: 20px;
+button:hover {
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.feature {
+  background-image: url(./img/galaxy-1.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+article {
+  max-width: 25vw;
+  max-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#destination {
+  width: 100%;
+  display: flex;
+}
+
+#destination form {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  background-color: black;
+  padding: 1rem;
+}
+
+img {
+  max-width: 210px;
+  max-height: 168px;
+}
+
+label {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 10rem;
+}
+
+input {
+  margin-right: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
 }
 
 .title {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    padding-top: 2.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 3rem;
-    margin-bottom: 10rem;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  gap: 3rem;
+  margin-bottom: 10rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-h1{
-    font-size: 2rem;
-    padding-bottom: 2rem;
-    padding-top: 1.5rem;
-    align-items: center;
-}
-
-.title a{
-    background-color: transparent;
-    height: 4rem;
-    font-size: 1rem;
-    padding: 1rem;
-    padding-right: 5rem;
-    border: #fff solid 2px;
+h1 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  align-items: center;
 }
 
-.title a:hover{
-    color: black;
-    background-color: #fff;
-    opacity: 50%;
+.title a {
+  background-color: transparent;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 1rem;
+  padding-right: 5rem;
+  border: #fff solid 2px;
 }
 
-
-.feature2{
-    background-image: url(./img/landscape-1.jpg);
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.feature2 {
+  background-image: url(./img/landscape-1.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.transport{
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    padding-top: 2.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 3rem;
-    margin-bottom: 10rem;
+#transport {
+  width: 100%;
+  display: flex;
 }
 
-.transport a{
-    background-color: transparent;
-    height: 4rem;
-    font-size: 1rem;
-    padding: 1rem;
-    padding-right: 5rem;
-    border: #fff solid 2px;
-}
-.transport a:hover{
-    color: black;
-    background-color: #fff;
-    opacity: 50%;
+#transport form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  background-color: black;
+  padding: 1rem;
 }
 
-.feature3{
-    background-image: url(./img/eclipse-1.jpg);
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.transport {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  gap: 3rem;
+  margin-bottom: 10rem;
 }
 
-.col{
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    padding-top: 2.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 3rem;
-    margin-bottom: 10rem;
+.feature3 {
+  background-image: url(./img/eclipse-1.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.col a{
-    background-color: transparent;
-    height: 4rem;
-    font-size: 1rem;
-    padding: 1rem;
-    padding-right: 5rem;
-    border: #fff solid 2px;
-}
-.col a:hover{
-    color: black;
-    background-color: #fff;
-    opacity: 50%;
+.col {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  gap: 3rem;
+  margin-bottom: 7rem;
 }
 
-footer{
-    background-color: black;
-    text-align: center;
-    color: #555;
-    padding: 40px;
+footer {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: #555;
+  z-index: 1;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.app {
+  margin-top: 10rem;
+  width: 100%;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: black;
+  padding: 1rem;
+  border: solid red;
 }

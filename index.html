@@ -1,64 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceXYZ</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
     <header>
-        <h1>SpaceXYZ Mining Corp</h1>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-        </nav>
+      <h1>SpaceXYZ Mining Corp</h1>
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        <a class="basket" href="#"
+          >BASKET
+          <p id="cost">0</p>
+          BTC</a
+        >
+      </nav>
     </header>
 
     <main>
-        <section class="feature">
-            <div class="title">
-                <h2>A Galaxy Of Possibilities</h2>
-                <h1>Choose Your Destination</h1>
-                <a href="#">Read More</a>
-            </div>
-        </section>
-        <div class="destination">
-            <form action="./app.js" method="post">
-                
-                <img src="./img/Mercury.jpg"/>
-                <label for="p1">Mercury</label>
-                <input type="radio" id="p1" name="Merc">
-                
-                <img src="./img/Venus.jpg"/>
-                <label for="p2">Venus</label>
-                <input type="radio" id="p2" name="Venus">
-                
-                <img src="./img/Mars.jpg"/>
-                <label for="p3">Mars</label>
-                <input type="radio" id="p3" name="Mars">
-            </form>
+      <section class="feature">
+        <div class="title">
+          <h2>A Galaxy Of Possibilities</h2>
+          <h1>Choose Your Destination</h1>
+          <button id="desbtn" onclick="toggledes">Read More</button>
         </div>
-        <section class="feature2">
-            <div class="transport">
-                <h2>More Than One Way To Fly</h2>
-                <h1>How Would You Like To Travel?</h1>
-                <a href="#">Read More</a>
-            </div>
-        </section>
+      </section>
 
-        <section class="feature3">
-            <div class="col">
-                <h2>Opportunity Awaits</h2>
-                <h1>Do You Have Your Colonisation Visa? </h1>
-                <a href="#">Apply Here</a>
-            </div>
-        </section>
+      <!-- toggle destination -->
+
+      <div id="destination" style="height: 0vh">
+        <form class="planet" action="./app.js" method="post">
+          <article>
+            <h3>Mercury</h3>
+            <img class="planet" src="./img/Mercury.jpg" />
+            <p>
+              If you like warm summers and cold winters this is the destination
+              for you.
+            </p>
+            <label class="planet" for="p1"
+              >Mercury
+              <input
+                class="planet"
+                type="radio"
+                id="p1"
+                name="planetSelecter"
+                value="mercury"
+              />
+            </label>
+          </article>
+          <article>
+            <h3>Venus</h3>
+            <img class="planet" src="./img/Venus.jpg" />
+            <p>Hot humid conditions make Venus the perfect tropical getaway.</p>
+            <label class="planet" for="p2"
+              >Venus
+              <input
+                class="planet"
+                type="radio"
+                id="p2"
+                name="planetSelecter"
+                value="venus"
+              />
+            </label>
+          </article>
+          <article>
+            <h3>Mars</h3>
+            <img class="planet" src="./img/Mars.jpg" />
+            <p>
+              Dry and cool Mars is the perfect destination for those that
+              don&apos;t like to go too far outside their comfort zone.
+            </p>
+            <label class="planet" for="p3"
+              >Mars
+              <input
+                class="planet"
+                type="radio"
+                id="p3"
+                name="planetSelecter"
+                value="mars"
+              />
+            </label>
+          </article>
+          <button type="submit" value="submit">Add to basket</button>
+        </form>
+      </div>
+
+      <section class="feature2">
+        <div class="transport">
+          <h2>More Than One Way To Fly</h2>
+          <h1>How Would You Like To Travel?</h1>
+          <button id="transbtn" onclick="toggletran">Read More</button>
+        </div>
+      </section>
+
+      <!-- toggle transport -->
+
+      <div id="transport" style="height: 0vh">
+        <form class="spacex" action="./app.js" method="post">
+          <article>
+            <h3>Space X</h3>
+            <img class="spacex" src="./img/spacex.jpg" />
+            <p>
+              SpaceX is our most popular and trusted mode of interstella
+              transport with a great safety record.
+            </p>
+            <label class="spacex" for="t1"
+              >Space X Rocket
+              <input
+                class="spacex"
+                type="radio"
+                id="t1"
+                name="transportSelecter"
+                value="spacex"
+              />
+            </label>
+          </article>
+          <article>
+            <h3>Sub Light Star Cruiser</h3>
+            <img class="spacex" src="./img/cruiser.jpg" />
+            <p>
+              Our latest in Sub Light Star Cruisers gets you there in less than
+              half the time.
+            </p>
+            <label class="spacex" for="t2"
+              >Sub Light Star Cruiser
+              <input
+                class="spacex"
+                type="radio"
+                id="t2"
+                name="transportSelecter"
+                value="slsc"
+              />
+            </label>
+          </article>
+          <article>
+            <h3>Teleportation</h3>
+            <img class="spacex" src="./img/teleport.jpg" />
+            <p>
+              With our latest and most up to date innovation in teleportation
+              technology not only can you reach your destination in the blink of
+              an eye but with our bolt on packages you can upgrade your DNA and
+              arrive perfectly adapted to thrive in your new environment.
+            </p>
+            <label class="spacex" for="t3"
+              >Teleportation
+              <input
+                class="spacex"
+                type="radio"
+                id="t3"
+                name="transportSelecter"
+                value="tele"
+              />
+            </label>
+          </article>
+          <button type="submit" value="submit">Add to basket</button>
+        </form>
+      </div>
+
+      <section class="feature3">
+        <div class="col">
+          <h2>Opportunity Awaits</h2>
+          <h1>Do You Have Your Colonisation Visa?</h1>
+          <a href="./form.html"><button id="visa">Read More</button></a>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        SpaceXYZ Minning Corp &copy; 2023
-    </footer>
-</body>
+    <footer>SpaceXYZ Minning Corp &copy; 2023</footer>
+  </body>
 </html>
