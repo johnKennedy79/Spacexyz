@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colonisation Visa Aplication Request</title>
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./form.css" />
     <script src="./app.js" defer></script>
   </head>
@@ -12,13 +11,13 @@
     <header>
       <h1>SpaceXYZ Mining Corp</h1>
       <nav>
-        <a href="#">HOME</a>
+        <a href="./index.html">HOME</a>
         <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
+        <a href="#">CONTACT US</a>
       </nav>
     </header>
     <main>
-      <div class="app">
+      <article id="formArticle">
         <p class="app">
           Note; You will not be able to purchase transport without first
           acquiring a valid colonisation visa for your destination. If you
@@ -30,10 +29,10 @@
           completed and submitted the form we will send you your colonisation
           visa application pack.
         </p>
-        <br />
+      </article>
+        <section>
         <form class="app" action="./app.js" method="post">
           <h3 class="app">Your Details</h3>
-          <br />
           <label class="app" for="fullname">* Full Name:</label>
           <input
             class="app"
@@ -46,7 +45,6 @@
           />
           <label class="app" for="dob"> Date of birth</label>
           <input class="app" type="date" name="dob" id="dob" required />
-          <br />
 
           <label class="app" for="telephone"
             >* Telephone Number (with international dialing code)
@@ -59,19 +57,19 @@
             placeholder="000 0000 000 000"
             autocomplete="tel-national"
           />
-
-          <label class="app" for="email">Email Address</label>
+          <label class="app" for="email">* Email Address</label>
           <input
             class="app"
             type="email"
             id="email"
             name="email"
             placeholder="you@email.com"
+            required
             autocomplete="email"
           />
-          <br />
+        </section>
+          <address>
           <h3 class="app">Address</h3>
-          <br />
           <label class="app" for="firstLine">* First Line</label>
           <input
             class="app"
@@ -79,14 +77,14 @@
             id="firstLine"
             placeholder="First Line."
             required
-          /><br />
+          />
           <label class="app" for="secoundLine"> Secound Line (optional)</label>
           <input
             class="app"
             type="text"
             id="secoundLine"
             placeholder="Secound Line."
-          /><br />
+          />
           <label class="app" for="city">* Town or City</label>
           <input
             class="app"
@@ -94,7 +92,7 @@
             id="city"
             placeholder="Town or City."
             required
-          /><br />
+          />
           <label class="app" for="state">* County or State</label>
           <input
             class="app"
@@ -102,7 +100,7 @@
             id="state"
             placeholder="County or State."
             required
-          /><br />
+          />
           <label class="app" for="postc">* Postcode</label>
           <input
             class="app"
@@ -110,11 +108,11 @@
             id="postc"
             placeholder="Postcode."
             required
-          /><br /><br />
-          <button type="submit" id="subform">Submit</button>
+          />
+        </address>
+          <button onclick="alert(`Sorry this button is not curently working!`)">Submit</button>
         </form>
-      </div>
     </main>
-    <footer></footer>
+    <footer>SpaceXYZ Minning Corp &copy; 2023</footer>
   </body>
 </html>
